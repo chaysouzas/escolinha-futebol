@@ -1,0 +1,492 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+
+  <title>COF Sports | Performance & Treinamento</title>
+  <meta name="description" content="Treinamentos esportivos com metodologia profissional. Crossfoot, Beach Tennis, Futvôlei, Vôlei e Escolinha. Aulas e matrículas na COF Sports." />
+
+  <link rel="preload" href="assets/style.css" as="style" />
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="header" data-elevate>
+    <div class="container header__inner">
+       <a class="brand" href="#home" aria-label="Ir para o início">
+        <span class="logo-badge" aria-hidden="true">
+            <i class="bi bi-dribbble"></i>
+        </span>
+
+        <span class="logo-text">COF<span class="logo-accent">SPORTS</span></span>
+        </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+          <span class="nav__toggleLines" aria-hidden="true"></span>
+          <span class="sr-only">Abrir menu</span>
+        </button>
+
+        <div class="nav__panel" id="menu">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#home">Home</a></li>
+            <li><a class="nav__link" href="#sobre">Sobre</a></li>
+            <li><a class="nav__link" href="#modalidades">Modalidades</a></li>
+            <li><a class="nav__link" href="#planos">Planos</a></li>
+            <li><a class="nav__link" href="#galeria">Fotos</a></li>
+            <li><a class="nav__link" href="#contato">Contato</a></li>
+          </ul>
+
+          <div class="nav__cta">
+            <a class="btn btn--ghost" href="#planos">Ver planos</a>
+            <a class="btn btn--primary" href="https://wa.me/5511999999999" target="_blank" rel="noopener">
+              Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="nav__backdrop" data-backdrop hidden></div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section id="home" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Performance • Técnica • Disciplina</p>
+          <h1>Eleve seu jogo ao <span class="accent">próximo nível</span>.</h1>
+          <p class="lead">
+            Treinos específicos com metodologia profissional, para crianças, adolescentes e adultos. Da base à alta performance, do jeito certo.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://wa.me/5511999999999" target="_blank" rel="noopener">
+              Quero uma aula experimental
+            </a>
+            <a class="btn btn--ghost" href="#modalidades">Ver modalidades</a>
+          </div>
+
+          
+        <!-- <div class="hero__highlights" aria-label="Diferenciais COF Sports">
+        <div class="highlight">
+            <span class="highlight__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 16c2-4 6-6 8-12 2 6 6 8 8 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 16c1.2 2.2 3.1 4 5 4s3.8-1.8 5-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            </span>
+            <div class="highlight__text">
+            <strong>Treino específico</strong>
+            <span>tática e tomada de decisão</span>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <span class="highlight__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 7h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 7v6a5 5 0 0 0 10 0V7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M9 21h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            </span>
+            <div class="highlight__text">
+            <strong>Metodologia</strong>
+            <span>progressão por níveis</span>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <span class="highlight__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 20h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 20V10l5-4 5 4v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M10 20v-5h4v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            </span>
+            <div class="highlight__text">
+            <strong>Estrutura</strong>
+            <span>ambiente de arena</span>
+            </div>
+        </div>
+        </div> -->
+
+        <!-- <div class="hero__visual" aria-hidden="true">
+          <div class="hero__card">
+            <div class="hero__cardTop">
+              <span class="pill">COF SPORTS</span>
+              <span class="pill pill--soft">Matrículas abertas</span>
+            </div>
+            <div class="hero__meter">
+              <span>Intensidade</span>
+              <div class="meter"><i style="width:78%"></i></div>
+            </div>
+            <div class="hero__meter">
+              <span>Técnica</span>
+              <div class="meter"><i style="width:86%"></i></div>
+            </div>
+            <div class="hero__meter">
+              <span>Disciplina</span>
+              <div class="meter"><i style="width:82%"></i></div>
+            </div>
+            <p class="hero__note">Treinos pensados para evoluir rápido sem perder a base.</p>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="hero__glow" aria-hidden="true"></div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container split">
+        <div class="split__copy">
+          <h2 class="h2">Treino <span class="accent">padrão profissional</span></h2>
+          <br />
+          <p class="p">
+            A COF Sports nasceu pra quem quer evoluir de verdade: criança que está começando, atleta que precisa de fundamento, ou adulto que quer performance com segurança. Aqui o foco não é só “suar”, é treinar com propósito.
+          </p>
+          <p class="p">
+            Nossa rotina mistura técnica, tática, condicionamento e comportamento de jogo. Você entende o porquê do treino, mede progresso e sente a evolução na prática.
+          </p> <br/>
+
+          <div class="chips" aria-label="Destaques">
+            <span class="chip">Avaliação técnica</span>
+            <span class="chip">Turmas por nível</span>
+            <span class="chip">Treino situacional</span>
+            <span class="chip">Base e alta performance</span>
+          </div>
+        </div>
+
+        <div class="split__card">
+          <div class="stat">
+            <span class="stat__num">+27</span>
+            <span class="stat__label">anos de experiência</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">+10 mil</span>
+            <span class="stat__label">atletas</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">5</span>
+            <span class="stat__label">modalidades ativas</span>
+          </div>
+
+          <a class="btn btn--primary btn--block" href="https://wa.me/5511999999999" target="_blank" rel="noopener">
+            Quero falar com a COF
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="modalidades" class="section section--soft">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 class="h2">Nossas <span class="accent">modalidades</span></h2>
+          <p class="p muted">Escolha seu foco. A gente cuida da evolução.</p>
+        </div>
+
+        <div class="grid cards">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 16c2-4 6-6 8-12 2 6 6 8 8 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7 16c1.2 2.2 3.1 4 5 4s3.8-1.8 5-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="h3">Crossfoot</h3>
+            <p class="p">Treino específico de futebol com intensidade, agilidade e tomada de decisão.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7 18c2-6 8-6 10 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 6c2.5 2 4 4.5 4 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 6c-2.5 2-4 4.5-4 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="h3">Beach Tennis</h3>
+            <p class="p">Trabalho de tempo de bola, mobilidade e ritmo com treinos dinâmicos na areia.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 1 0 10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 2c1.6 3.2 1.6 6.4 0 9.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M2 12c3.2-1.6 6.4-1.6 9.6 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="h3">Futvôlei</h3>
+            <p class="p">Domínio, posicionamento e situação de jogo pra evoluir do recreativo ao competitivo.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 12c6-4 10-4 16 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 12c6 4 10 4 16 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 4c4 6 4 10 0 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 4c-4 6-4 10 0 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="h3">Vôlei de Praia</h3>
+            <p class="p">Fundamentos, tática e leitura de jogo com evolução clara por etapas.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M8 20v-7a4 4 0 1 1 8 0v7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M6 20h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 4v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="h3">Escolinha de Futebol</h3>
+            <p class="p">Formação de base com disciplina, coordenação, técnica e amor pelo esporte.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="planos" class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 class="h2">Planos e <span class="accent">matrículas</span></h2>
+          <p class="p muted">Escolha o plano ideal e fale com a gente pra alinhar turmas e horários.</p>
+        </div>
+
+        <div class="grid pricing">
+          <article class="priceCard">
+            <h3 class="h3">Individual</h3>
+            <p class="price"><strong>R$ 150</strong><span>/mês</span></p>
+            <p class="p muted">Ideal pra quem quer consistência e evolução semanal.</p>
+            <ul class="list">
+              <li>2x por semana</li>
+              <li>Material de treino incluso</li>
+              <li>Avaliação técnica</li>
+            </ul>
+             <a class="btn btn--primary btn--block" href="https://wa.me/5511999999999?text=Oi!%20Quero%20o%20plano%20Elite%20COF." target="_blank" rel="noopener">Matricular agora</a>
+          </article>
+
+          <article class="priceCard priceCard--featured">
+            <div class="ribbon" aria-hidden="true">Mais procurado</div>
+            <h3 class="h3">Elite COF</h3>
+            <p class="price"><strong>R$ 280</strong><span>/mês</span></p>
+            <p class="p muted">Pra quem quer treinar forte, com rotina completa e foco em performance.</p>
+            <ul class="list">
+              <li>Treinos diários</li>
+              <li>Multi-modalidades</li>
+              <li>Uniforme oficial</li>
+              <li>Acesso a eventos</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="https://wa.me/5511999999999?text=Oi!%20Quero%20o%20plano%20Elite%20COF." target="_blank" rel="noopener">Matricular agora</a>
+          </article>
+
+          <article class="priceCard">
+            <h3 class="h3">Combo Família</h3>
+            <p class="price"><strong>R$ 450</strong><span>/mês</span></p>
+            <p class="p muted">Boa opção pra quem quer treinar junto e economizar.</p>
+            <ul class="list">
+              <li>Até 3 pessoas</li>
+              <li>Horários flexíveis</li>
+              <li>Suporte nutricional básico</li>
+            </ul>
+             <a class="btn btn--primary btn--block" href="https://wa.me/5511999999999?text=Oi!%20Quero%20o%20plano%20Elite%20COF." target="_blank" rel="noopener">Matricular agora</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="section section--soft">
+      <div class="container">
+        <div class="sectionHead">
+        <h2 class="h2">O que estão dizendo <span class="accent">sobre nós</span></h2>
+        <p class="p muted">Depoimentos reais de quem treina com a COF. Quer ver mais? Dá uma olhada nas avaliações do Google.</p>
+
+        <div class="sectionHead__cta">
+            <a class="btn btn--ghost" href="COLE_AQUI_O_LINK_DAS_AVALIACOES_GOOGLE" target="_blank" rel="noopener">
+            Ver avaliações no Google
+            </a>
+        </div>
+        </div>
+
+        <div class="snap" aria-label="Depoimentos">
+          <article class="tCard">
+            <p class="tCard__quote">“A metodologia da COF Sports mudou meu rendimento no futvôlei. Treino tático de verdade.”</p>
+            <div class="tCard__user">
+              <div class="avatar" aria-hidden="true">RS</div>
+              <div>
+                <strong>Ricardo Silva</strong>
+                <span class="muted">Aluno de Futvôlei</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tCard">
+            <p class="tCard__quote">“Meu filho ama a escolinha. A atenção dos professores e a organização da turma fazem diferença.”</p>
+            <div class="tCard__user">
+              <div class="avatar" aria-hidden="true">MC</div>
+              <div>
+                <strong>Mariana Costa</strong>
+                <span class="muted">Mãe de aluno</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tCard">
+            <p class="tCard__quote">“O Crossfoot é intenso e bem estruturado. Dá pra sentir evolução no condicionamento e na técnica.”</p>
+            <div class="tCard__user">
+              <div class="avatar" aria-hidden="true">LM</div>
+              <div>
+                <strong>Lucas Mendes</strong>
+                <span class="muted">Atleta Crossfut</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+<section id="fotos" class="section">
+  <div class="container">
+    <div class="sectionHead">
+      <h2 class="h2">Galeria de <span class="accent">fotos</span></h2>
+      <p class="p muted">Clique para abrir e ver em tela cheia.</p>
+    </div>
+
+    <div class="gallery" aria-label="Galeria de fotos">
+      
+      <button class="gItem" type="button"
+        data-full="assets/img/arena.webp"
+        data-title="Arena">
+        <img src="assets/img/arena.webp" alt="Arena COF Sports" loading="lazy" decoding="async">
+        <span class="gLabel">Arena</span>
+      </button>
+
+      <button class="gItem" type="button"
+        data-full="assets/img/escolinha.webp"
+        data-title="Escolinha">
+        <img src="assets/img/escolinha.webp" alt="Escolinha COF Sports" loading="lazy" decoding="async">
+        <span class="gLabel">Escolinha</span>
+      </button>
+
+      <button class="gItem" type="button"
+        data-full="assets/img/beach-tenis.webp"
+        data-title="Beach Tennis">
+        <img src="assets/img/beach-tenis.webp" alt="Beach Tennis COF Sports" loading="lazy" decoding="async">
+        <span class="gLabel">Beach Tennis</span>
+      </button>
+
+      <button class="gItem" type="button"
+        data-full="assets/img/futvolei.webp"
+        data-title="Futvôlei">
+        <img src="assets/img/futvolei.webp" alt="Futvôlei COF Sports" loading="lazy" decoding="async">
+        <span class="gLabel">Futvôlei</span>
+      </button>
+
+      <button class="gItem" type="button"
+        data-full="assets/img/crossfut.webp"
+        data-title="Crossfut">
+        <img src="assets/img/crossfut.webp" alt="Crossfut COF Sports" loading="lazy" decoding="async">
+        <span class="gLabel">Crossfut</span>
+      </button>
+
+      <button class="gItem" type="button"
+        data-full="assets/img/volei.webp"
+        data-title="Vôlei">
+        <img src="assets/img/volei.webp" alt="Vôlei COF Sports" loading="lazy" decoding="async">
+        <span class="gLabel">Vôlei</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Modal único (abre 1 item por vez) -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox__backdrop" data-lb-close></div>
+
+  <div class="lightbox__panel" role="dialog" aria-modal="true" aria-label="Foto em tela cheia">
+    <img class="lightbox__img" id="lightboxImg" alt="">
+    <div class="lightbox__bar">
+      <p class="lightbox__title" id="lightboxTitle"></p>
+      <button class="lightbox__close" type="button" aria-label="Fechar" data-lb-close>✕</button>
+    </div>
+  </div>
+</div>
+
+    <section id="contato" class="section section--soft">
+      <div class="container contact">
+        <div class="contact__info">
+          <h2 class="h2">Fale <span class="accent">conosco</span></h2>
+          <p class="p">Tire dúvidas, alinhe horários e agende sua aula experimental.</p>
+
+          <div class="contact__row">
+            <div class="contact__item">
+              <span class="contact__label">WhatsApp</span>
+              <a class="contact__value" href="https://wa.me/5511999999999" target="_blank" rel="noopener">(11) 99999-9999</a>
+            </div>
+
+            <div class="contact__item">
+              <span class="contact__label">E-mail</span>
+              <a class="contact__value" href="mailto:contato@cofsports.com.br">contato@cofsports.com.br</a>
+            </div>
+
+            <div class="contact__item">
+              <span class="contact__label">Endereço</span>
+              <span class="contact__value">Rua Paraguaçu, 235 • Curitiba/PR</span>
+            </div>
+          </div>
+
+          <div class="social">
+            <a class="social__link" href="#" aria-label="Instagram">Instagram</a>
+            <a class="social__link" href="#" aria-label="Facebook">Facebook</a>
+            <a class="social__link" href="#" aria-label="YouTube">YouTube</a>
+          </div>
+
+          <a class="btn btn--primary" href="https://wa.me/5511999999999?text=Oi!%20Quero%20agendar%20uma%20aula%20experimental." target="_blank" rel="noopener">
+            Agendar agora
+          </a>
+        </div>
+
+        <div class="contact__map" aria-label="Mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.546867553327!2d-49.256679999999996!3d-25.419974300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce43b74115a1b%3A0xce4d63f5da022c38!2sCof%20Sports!5e0!3m2!1spt-BR!2sbr!4v1772477978262!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+   <a class="wpp" href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+    </a>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+        <div>
+        <a class="brand" href="#home" aria-label="Ir para o início">
+        <span class="logo-badge" aria-hidden="true">
+            <i class="bi bi-dribbble"></i>
+        </span>
+
+        <span class="logo-text">COF<span class="logo-accent">SPORTS</span></span>
+        </a>
+
+        <br>
+        <p class="p muted">Sua performance levada a sério. Treinos especializados pra quem busca evolução consistente.</p>
+        </div>
+
+      <div>
+        <h3 class="h3">Navegação</h3>
+        <a class="fLink" href="#modalidades">Modalidades</a>
+        <a class="fLink" href="#planos">Planos</a>
+        <a class="fLink" href="#galeria">Arena</a>
+        <a class="fLink" href="#contato">Contato</a>
+      </div>
+
+      <div>
+        <h3 class="h3">Horários</h3>
+        <p class="p muted">Seg a Sex: 07h às 23h</p>
+        <p class="p muted">Sáb: 08h às 20h</p>
+        <p class="p muted">Dom: 08h às 18h</p>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p class="muted text-footer">© COF Sports - Todos os direitos reservados 2026 </p>
+      <p></p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
