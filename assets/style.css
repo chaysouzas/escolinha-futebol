@@ -976,7 +976,7 @@ button{font:inherit}
   }
   .nav__panel.is-open{transform: translateX(0)}
   .nav__list{flex-direction:column; align-items:stretch}
-  .nav__link{padding:12px 12px;)}
+  .nav__link{padding:12px}
   .nav__cta{display:grid; gap:10px}
 
   /* Modalidades: carrossel nativo (flex) */
