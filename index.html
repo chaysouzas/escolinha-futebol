@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,14 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark light" />
 
-  <title>COF Sports | Performance & Treinamento</title>
-  <meta name="description" content="Treinamentos esportivos com metodologia profissional. Crossfoot, Beach Tennis, Futvôlei, Vôlei e Escolinha. Aulas e matrículas na COF Sports." />
+  <title>NEX Sports | Performance & Treinamento Esportivo em Curitiba</title>
+  <meta name="description" content="Treinamentos esportivos com metodologia profissional em Curitiba. Crossfoot, Beach Tennis, Futvôlei, Vôlei e Escolinha. Agende sua aula experimental." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://nexsports.com.br/" />
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nexsports.com.br/" />
+  <meta property="og:title" content="NEX Sports | Performance & Treinamento Esportivo em Curitiba" />
+  <meta property="og:description" content="Treinamentos esportivos com metodologia profissional. Crossfoot, Beach Tennis, Futvôlei, Vôlei e Escolinha. Agende sua aula experimental." />
+  <meta property="og:image" content="https://nexsports.com.br/assets/img/og-cover.webp" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NEX Sports | Performance & Treinamento Esportivo em Curitiba" />
+  <meta name="twitter:description" content="Treinamentos esportivos com metodologia profissional. Crossfoot, Beach Tennis, Futvôlei, Vôlei e Escolinha." />
+  <meta name="twitter:image" content="https://nexsports.com.br/assets/img/og-cover.webp" />
+
+  <!-- Preconnect para recursos externos -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  <link rel="preconnect" href="https://www.google.com" crossorigin />
 
   <link rel="preload" href="assets/style.css" as="style" />
   <link rel="stylesheet" href="assets/style.css" />
 
+  <!-- Bootstrap Icons -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" /></noscript>
+
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Structured Data: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "NEX Sports",
+    "description": "Treinamentos esportivos com metodologia profissional. Crossfoot, Beach Tennis, Futvôlei, Vôlei e Escolinha.",
+    "url": "https://nexsports.com.br",
+    "telephone": "+55-41-99999-9999",
+    "email": "contato@nexsports.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Exemplo, 500",
+      "addressLocality": "Curitiba",
+      "addressRegion": "PR",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "07:00",
+        "closes": "23:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "sport": ["Futebol","Beach Tennis","Futvôlei","Vôlei de Praia"]
+  }
+  </script>
 </head>
 
 <body>
@@ -26,7 +93,7 @@
             <i class="bi bi-dribbble"></i>
         </span>
 
-        <span class="logo-text">COF<span class="logo-accent">SPORTS</span></span>
+        <span class="logo-text">NEX<span class="logo-accent">SPORTS</span></span>
         </a>
 
       <nav class="nav" aria-label="Navegação principal">
@@ -47,7 +114,7 @@
 
           <div class="nav__cta">
             <a class="btn btn--ghost botao-menu" href="#planos">Ver planos</a>
-            <a class="btn btn--primary botao-menu" href="https://wa.me/5511999999999" target="_blank" rel="noopener">
+            <a class="btn btn--primary botao-menu" href="https://wa.me/5541999999999" target="_blank" rel="noopener">
               Falar no WhatsApp
             </a>
           </div>
@@ -69,78 +136,12 @@
           </p>
 
           <div class="hero__actions">
-            <a class="btn btn--primary" href="https://wa.me/5511999999999" target="_blank" rel="noopener">
+            <a class="btn btn--primary" href="https://wa.me/5541999999999" target="_blank" rel="noopener">
               Quero uma aula experimental
             </a>
             <a class="btn btn--ghost" href="#modalidades">Ver modalidades</a>
           </div>
-
-          
-        <!-- <div class="hero__highlights" aria-label="Diferenciais COF Sports">
-        <div class="highlight">
-            <span class="highlight__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-                <path d="M4 16c2-4 6-6 8-12 2 6 6 8 8 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M7 16c1.2 2.2 3.1 4 5 4s3.8-1.8 5-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-            </span>
-            <div class="highlight__text">
-            <strong>Treino específico</strong>
-            <span>tática e tomada de decisão</span>
-            </div>
         </div>
-
-        <div class="highlight">
-            <span class="highlight__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-                <path d="M12 3v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M7 7h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M7 7v6a5 5 0 0 0 10 0V7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M9 21h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-            </span>
-            <div class="highlight__text">
-            <strong>Metodologia</strong>
-            <span>progressão por níveis</span>
-            </div>
-        </div>
-
-        <div class="highlight">
-            <span class="highlight__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-                <path d="M4 20h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M7 20V10l5-4 5 4v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M10 20v-5h4v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-            </span>
-            <div class="highlight__text">
-            <strong>Estrutura</strong>
-            <span>ambiente de arena</span>
-            </div>
-        </div>
-        </div> -->
-
-        <!-- <div class="hero__visual" aria-hidden="true">
-          <div class="hero__card">
-            <div class="hero__cardTop">
-              <span class="pill">COF SPORTS</span>
-              <span class="pill pill--soft">Matrículas abertas</span>
-            </div>
-            <div class="hero__meter">
-              <span>Intensidade</span>
-              <div class="meter"><i style="width:78%"></i></div>
-            </div>
-            <div class="hero__meter">
-              <span>Técnica</span>
-              <div class="meter"><i style="width:86%"></i></div>
-            </div>
-            <div class="hero__meter">
-              <span>Disciplina</span>
-              <div class="meter"><i style="width:82%"></i></div>
-            </div>
-            <p class="hero__note">Treinos pensados para evoluir rápido sem perder a base.</p>
-          </div>
-        </div> -->
       </div>
 
       <div class="hero__glow" aria-hidden="true"></div>
@@ -152,7 +153,7 @@
           <h2 class="h2">Treino <span class="accent">padrão profissional</span></h2>
           <br />
           <p class="p">
-            A COF Sports nasceu pra quem quer evoluir de verdade: criança que está começando, atleta que precisa de fundamento, ou adulto que quer performance com segurança. Aqui o foco não é só “suar”, é treinar com propósito.
+            A NEX Sports nasceu pra quem quer evoluir de verdade: criança que está começando, atleta que precisa de fundamento, ou adulto que quer performance com segurança. Aqui o foco não é só “suar”, é treinar com propósito.
           </p>
           <p class="p">
             Nossa rotina mistura técnica, tática, condicionamento e comportamento de jogo. Você entende o porquê do treino, mede progresso e sente a evolução na prática.
@@ -180,8 +181,8 @@
             <span class="stat__label">modalidades ativas</span>
           </div>
 
-          <a class="btn btn--primary btn--block" href="https://wa.me/5511999999999" target="_blank" rel="noopener">
-            Quero falar com a COF
+          <a class="btn btn--primary btn--block" href="https://wa.me/5541999999999" target="_blank" rel="noopener">
+            Quero falar com a NEX
           </a>
         </div>
       </div>
@@ -255,12 +256,12 @@
               <li>Material de treino incluso</li>
               <li>Avaliação técnica</li>
             </ul>
-             <a class="btn btn--primary btn--block" href="https://wa.me/5511999999999?text=Oi!%20Quero%20o%20plano%20Elite%20COF." target="_blank" rel="noopener">Matricular agora</a>
+             <a class="btn btn--primary btn--block" href="https://wa.me/5541999999999" target="_blank" rel="noopener">Matricular agora</a>
           </article>
 
           <article class="priceCard priceCard--featured">
             <div class="ribbon" aria-hidden="true">Mais procurado</div>
-            <h3 class="h3">Elite COF</h3>
+            <h3 class="h3">Elite NEX</h3>
             <p class="price"><strong>R$ 280</strong><span>/mês</span></p>
             <p class="p muted">Pra quem quer treinar forte, com rotina completa e foco em performance.</p>
             <ul class="list">
@@ -269,7 +270,7 @@
               <li>Uniforme oficial</li>
               <li>Acesso a eventos</li>
             </ul>
-            <a class="btn btn--primary btn--block" href="https://wa.me/5511999999999?text=Oi!%20Quero%20o%20plano%20Elite%20COF." target="_blank" rel="noopener">Matricular agora</a>
+            <a class="btn btn--primary btn--block" href="https://wa.me/5541999999999" target="_blank" rel="noopener">Matricular agora</a>
           </article>
 
           <article class="priceCard">
@@ -281,7 +282,7 @@
               <li>Horários flexíveis</li>
               <li>Suporte nutricional básico</li>
             </ul>
-             <a class="btn btn--primary btn--block" href="https://wa.me/5511999999999?text=Oi!%20Quero%20o%20plano%20Elite%20COF." target="_blank" rel="noopener">Matricular agora</a>
+             <a class="btn btn--primary btn--block" href="https://wa.me/5541999999999" target="_blank" rel="noopener">Matricular agora</a>
           </article>
         </div>
       </div>
@@ -291,44 +292,44 @@
       <div class="container">
         <div class="sectionHead">
         <h2 class="h2">O que estão dizendo <span class="accent">sobre nós</span></h2>
-        <p class="p muted">Depoimentos reais de quem treina com a COF. Quer ver mais? Dá uma olhada nas avaliações do Google.</p>
+        <p class="p muted">Depoimentos reais de quem treina com a NEX. Quer ver mais? Dá uma olhada nas avaliações do Google.</p>
 
         <div class="sectionHead__cta">
-            <a class="btn btn--ghost" href="COLE_AQUI_O_LINK_DAS_AVALIACOES_GOOGLE" target="_blank" rel="noopener">
+            <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">
             Ver avaliações no Google
             </a>
         </div>
         </div>
 
-        <div class="snap" aria-label="Depoimentos">
-          <article class="tCard">
-            <p class="tCard__quote">“A metodologia da COF Sports mudou meu rendimento no futvôlei. Treino tático de verdade.”</p>
-            <div class="tCard__user">
+        <div class="snap" aria-label="Depoimentos de alunos">
+          <article class="tCard" itemscope itemtype="https://schema.org/Review">
+            <blockquote class="tCard__quote" itemprop="reviewBody">“A metodologia da NEX Sports mudou meu rendimento no futvôlei. Treino tático de verdade.”</blockquote>
+            <div class="tCard__user" itemprop="author" itemscope itemtype="https://schema.org/Person">
               <div class="avatar" aria-hidden="true">RS</div>
               <div>
-                <strong>Ricardo Silva</strong>
+                <strong itemprop="name">Ricardo Silva</strong>
                 <span class="muted">Aluno de Futvôlei</span>
               </div>
             </div>
           </article>
 
-          <article class="tCard">
-            <p class="tCard__quote">“Meu filho ama a escolinha. A atenção dos professores e a organização da turma fazem diferença.”</p>
-            <div class="tCard__user">
+          <article class="tCard" itemscope itemtype="https://schema.org/Review">
+            <blockquote class="tCard__quote" itemprop="reviewBody">“Meu filho ama a escolinha. A atenção dos professores e a organização da turma fazem diferença.”</blockquote>
+            <div class="tCard__user" itemprop="author" itemscope itemtype="https://schema.org/Person">
               <div class="avatar" aria-hidden="true">MC</div>
               <div>
-                <strong>Mariana Costa</strong>
+                <strong itemprop="name">Mariana Costa</strong>
                 <span class="muted">Mãe de aluno</span>
               </div>
             </div>
           </article>
 
-          <article class="tCard">
-            <p class="tCard__quote">“O Crossfoot é intenso e bem estruturado. Dá pra sentir evolução no condicionamento e na técnica.”</p>
-            <div class="tCard__user">
+          <article class="tCard" itemscope itemtype="https://schema.org/Review">
+            <blockquote class="tCard__quote" itemprop="reviewBody">“O Crossfoot é intenso e bem estruturado. Dá pra sentir evolução no condicionamento e na técnica.”</blockquote>
+            <div class="tCard__user" itemprop="author" itemscope itemtype="https://schema.org/Person">
               <div class="avatar" aria-hidden="true">LM</div>
               <div>
-                <strong>Lucas Mendes</strong>
+                <strong itemprop="name">Lucas Mendes</strong>
                 <span class="muted">Atleta Crossfut</span>
               </div>
             </div>
@@ -348,59 +349,59 @@
     <div class="gallery" aria-label="Galeria de fotos">
       
       <button class="gItem" type="button"
-        data-full="assets/img/arena.webp"
+        data-full="https://images.unsplash.com/photo-1567220720374-a67f33b2a6b9?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         data-title="Arena">
-        <img src="assets/img/arena.webp" alt="Arena COF Sports" loading="lazy" decoding="async">
+        <img src="https://images.unsplash.com/photo-1567220720374-a67f33b2a6b9?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arena NEX Sports" loading="eager" fetchpriority="high" decoding="async" width="600" height="400">
         <span class="gLabel">Arena</span>
       </button>
 
       <button class="gItem" type="button"
         data-full="assets/img/escolinha.webp"
         data-title="Escolinha">
-        <img src="assets/img/escolinha.webp" alt="Escolinha COF Sports" loading="lazy" decoding="async">
+        <img src="assets/img/escolinha.webp" alt="Escolinha NEX Sports" loading="lazy" decoding="async" width="600" height="400">
         <span class="gLabel">Escolinha</span>
       </button>
 
       <button class="gItem" type="button"
-        data-full="assets/img/beach-tenis.webp"
+        data-full="https://plus.unsplash.com/premium_photo-1675542454554-01f5aecbede9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGJlYWNoJTIwdGVuaXN8ZW58MHx8MHx8fDA%3D"
         data-title="Beach Tennis">
-        <img src="assets/img/beach-tenis.webp" alt="Beach Tennis COF Sports" loading="lazy" decoding="async">
+        <img src="https://plus.unsplash.com/premium_photo-1675542454554-01f5aecbede9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGJlYWNoJTIwdGVuaXN8ZW58MHx8MHx8fDA%3D" alt="Beach Tennis NEX Sports" loading="lazy" decoding="async" width="600" height="400">
         <span class="gLabel">Beach Tennis</span>
       </button>
 
       <button class="gItem" type="button"
-        data-full="assets/img/futvolei.webp"
+        data-full="https://plus.unsplash.com/premium_photo-1708558514322-e51328af2ac9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         data-title="Futvôlei">
-        <img src="assets/img/futvolei.webp" alt="Futvôlei COF Sports" loading="lazy" decoding="async">
+        <img src="https://plus.unsplash.com/premium_photo-1708558514322-e51328af2ac9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Futvôlei NEX Sports" loading="lazy" decoding="async" width="600" height="400">
         <span class="gLabel">Futvôlei</span>
       </button>
 
       <button class="gItem" type="button"
         data-full="assets/img/crossfut.webp"
         data-title="Crossfut">
-        <img src="assets/img/crossfut.webp" alt="Crossfut COF Sports" loading="lazy" decoding="async">
+        <img src="assets/img/crossfut.webp" alt="Crossfut NEX Sports" loading="lazy" decoding="async" width="600" height="400">
         <span class="gLabel">Crossfut</span>
       </button>
 
       <button class="gItem" type="button"
-        data-full="assets/img/volei.webp"
+        data-full="https://images.unsplash.com/photo-1567880325673-ccc01edca61c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         data-title="Vôlei">
-        <img src="assets/img/volei.webp" alt="Vôlei COF Sports" loading="lazy" decoding="async">
+        <img src="https://images.unsplash.com/photo-1567880325673-ccc01edca61c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vôlei NEX Sports" loading="lazy" decoding="async" width="600" height="400">
         <span class="gLabel">Vôlei</span>
       </button>
     </div>
   </div>
 </section>
 
-<!-- Modal único (abre 1 item por vez) -->
-<div class="lightbox" id="lightbox" aria-hidden="true">
-  <div class="lightbox__backdrop" data-lb-close></div>
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="presentation">
+  <div class="lightbox__backdrop" data-lb-close aria-hidden="true"></div>
 
-  <div class="lightbox__panel" role="dialog" aria-modal="true" aria-label="Foto em tela cheia">
+  <div class="lightbox__panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
     <img class="lightbox__img" id="lightboxImg" alt="">
     <div class="lightbox__bar">
       <p class="lightbox__title" id="lightboxTitle"></p>
-      <button class="lightbox__close" type="button" aria-label="Fechar" data-lb-close>✕</button>
+      <button class="lightbox__close" type="button" aria-label="Fechar lightbox" data-lb-close>✕</button>
     </div>
   </div>
 </div>
@@ -414,17 +415,17 @@
           <div class="contact__row">
             <div class="contact__item">
               <span class="contact__label">WhatsApp</span>
-              <a class="contact__value" href="https://wa.me/5511999999999" target="_blank" rel="noopener">(11) 99999-9999</a>
+              <a class="contact__value" href="https://wa.me/5541999999999" target="_blank" rel="noopener">(41) 99999-9999</a>
             </div>
 
             <div class="contact__item">
               <span class="contact__label">E-mail</span>
-              <a class="contact__value" href="mailto:contato@cofsports.com.br">contato@cofsports.com.br</a>
+              <a class="contact__value" href="mailto:contato@nexsports.com.br">contato@nexsports.com.br</a>
             </div>
 
             <div class="contact__item">
               <span class="contact__label">Endereço</span>
-              <span class="contact__value">Rua Paraguaçu, 235 • Curitiba/PR</span>
+              <span class="contact__value">Rua Antonio Scorsin, 500 • Curitiba/PR</span>
             </div>
           </div>
 
@@ -434,19 +435,19 @@
             <a class="social__link" href="#" aria-label="YouTube">YouTube</a>
           </div>
 
-          <a class="btn btn--primary" href="https://wa.me/5511999999999?text=Oi!%20Quero%20agendar%20uma%20aula%20experimental." target="_blank" rel="noopener">
+          <a class="btn btn--primary" href="https://wa.me/5541999999999" target="_blank" rel="noopener">
             Agendar agora
           </a>
         </div>
 
         <div class="contact__map" aria-label="Mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.546867553327!2d-49.256679999999996!3d-25.419974300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce43b74115a1b%3A0xce4d63f5da022c38!2sCof%20Sports!5e0!3m2!1spt-BR!2sbr!4v1772477978262!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.6201719925566!2d-49.345934799999995!3d-25.4175218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce1c1c437bdf7%3A0x35ce9db5759ff6f3!2sRua%20Ant%C3%B4nio%20Escorsin%2C%20Curitiba%20-%20PR%2C%2081020-490!5e0!3m2!1spt-BR!2sbr!4v1780526683536!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
   </main>
 
-   <a class="wpp" href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+   <a class="wpp" href="https://wa.me/5541999999999" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
         <i class="bi bi-whatsapp" aria-hidden="true"></i>
     </a>
 
@@ -458,7 +459,7 @@
             <i class="bi bi-dribbble"></i>
         </span>
 
-        <span class="logo-text">COF<span class="logo-accent">SPORTS</span></span>
+        <span class="logo-text">NEX<span class="logo-accent">SPORTS</span></span>
         </a>
 
         <br>
@@ -482,8 +483,7 @@
     </div>
 
     <div class="container footer__bottom">
-      <p class="muted text-footer">© COF Sports - Todos os direitos reservados 2026 </p>
-      <p></p>
+      <p class="muted text-footer">© NEX Sports - Todos os direitos reservados.</p>
     </div>
   </footer>
 
