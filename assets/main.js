@@ -68,14 +68,16 @@ function createFocusTrap(container) {
 
   if (!toggle || !panel || !backdrop) return;
 
+  const closeBtn = panel.querySelector(".nav__close");
+
   const openMenu = () => {
     panel.classList.add("is-open");
     toggle.setAttribute("aria-expanded", "true");
-    backdrop.hidden = false;
     document.documentElement.style.overflow = "hidden";
-    // Move foco para o primeiro item interativo do menu
-    const firstLink = panel.querySelector("a, button");
-    if (firstLink) firstLink.focus();
+    requestAnimationFrame(() => {
+      const target = closeBtn || panel.querySelector("a, button");
+      if (target) target.focus();
+    });
   };
 
   const closeMenu = () => {
@@ -83,7 +85,6 @@ function createFocusTrap(container) {
     toggle.setAttribute("aria-expanded", "false");
     backdrop.hidden = true;
     document.documentElement.style.overflow = "";
-    // Devolve foco ao botão que abriu o menu
     toggle.focus();
   };
 
@@ -92,6 +93,7 @@ function createFocusTrap(container) {
     expanded ? closeMenu() : openMenu();
   });
 
+  if (closeBtn) closeBtn.addEventListener("click", closeMenu);
   backdrop.addEventListener("click", closeMenu);
 
   links.forEach((a) => {
@@ -162,4 +164,62 @@ function createFocusTrap(container) {
   window.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && lb.classList.contains("is-open")) close();
   });
+})();
+
+// ── Polaroid Carousel ─────────────────────────────────────────────────────────
+(() => {
+  const gallery = document.querySelector('.gallery[aria-label="Galeria de fotos"]');
+  if (!gallery) return;
+
+  const items = Array.from(gallery.querySelectorAll('.gItem'));
+  if (!items.length) return;
+
+  const prevBtn = document.querySelector('.carousel-prev');
+  const nextBtn = document.querySelector('.carousel-next');
+  const n = items.length;
+  let active = 0;
+
+  const cfg = () => {
+    const mob = window.matchMedia('(max-width: 640px)').matches;
+    return { x: mob ? 115 : 188, y: mob ? 12 : 20, rot: mob ? 9 : 11, sc: 0.11, max: 2 };
+  };
+
+  const update = () => {
+    const { x, y, rot, sc, max } = cfg();
+    items.forEach((item, i) => {
+      let d = i - active;
+      if (d > n / 2) d -= n;
+      if (d < -n / 2) d += n;
+      const a = Math.abs(d);
+      item.style.transform = `translateX(-50%) translateY(-50%) translateX(${d * x}px) translateY(${a * y}px) rotate(${d * rot}deg) scale(${Math.max(0.6, 1 - a * sc)})`;
+      item.style.opacity   = a > max ? 0 : Math.max(0.3, 1 - a * 0.22);
+      item.style.zIndex    = 10 - a;
+      item.style.pointerEvents = a > max ? 'none' : 'auto';
+      item.dataset.active  = a === 0 ? 'true' : 'false';
+    });
+  };
+
+  // Clicar no card ativo abre lightbox; clicar em outro navega até ele
+  items.forEach((item, i) => {
+    item.addEventListener('click', (e) => {
+      if (i !== active) {
+        e.stopPropagation();
+        active = i;
+        update();
+      }
+    });
+  });
+
+  prevBtn?.addEventListener('click', () => { active = (active - 1 + n) % n; update(); });
+  nextBtn?.addEventListener('click', () => { active = (active + 1) % n; update(); });
+
+  // Swipe touch
+  let tx0 = 0;
+  gallery.addEventListener('touchstart', e => { tx0 = e.touches[0].clientX; }, { passive: true });
+  gallery.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - tx0;
+    if (Math.abs(dx) > 48) { active = dx < 0 ? (active + 1) % n : (active - 1 + n) % n; update(); }
+  });
+
+  update();
 })();
